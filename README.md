@@ -39,6 +39,9 @@ Make sure `/opt/local/bin` and `/Library/Frameworks/Python.framework/Versions/2.
 
 ```console
 cd geometry
+***************************************
+git submodule update --init --recursive
+***************************************
 cmake .
 make -j3
 sudo make install
@@ -80,4 +83,3 @@ dpkg -i ../libs2*.deb ../python-s2*.deb
 ```console
 python test.py
 ```
-
