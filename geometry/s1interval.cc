@@ -5,7 +5,7 @@
 #include "base/logging.h"
 
 S1Interval S1Interval::FromPoint(double p) {
-  if (p == -M_PI) p = M_PI;
+  if (p == -M_PI) p = M_PI; 
   return S1Interval(p, p, ARGS_CHECKED);
 }
 
